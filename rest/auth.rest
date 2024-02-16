@@ -1,0 +1,22 @@
+GET http://localhost:5000/api/auth
+###
+POST http://localhost:5000/api/auth
+content-type: application/json
+
+{
+    "username": "Vaishali2024",
+    "email":"vaishali.viragi@gmail.com",
+    "password": "password",
+}
+###
+POST http://localhost:5000/api/auth/forgot-password
+content-type: application/json
+
+{
+   "username": "Vaishali2024",
+    "name": "Vaishali Viragi",
+    "email": "testemail@email.com"
+}
+###
+GET http://localhost:5000/api/user
+###

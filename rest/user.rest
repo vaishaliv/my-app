@@ -1,0 +1,42 @@
+GET http://localhost:5000/api/user
+###
+GET http://localhost:5000/api/user/65cd8ad712b82850376a3f2f
+###
+GET http://localhost:5000/api/user/?isAdmin=true
+###
+GET http://localhost:5000/api/user/?username=Samantha&isAdmin=false
+###
+GET http://localhost:5000/api/user/?sort=email
+###
+GET http://localhost:5000/api/user/sortByName
+###
+DELETE http://localhost:5000/api/user/bulkdelete
+###
+POST http://localhost:5000/api/user/bulkadd
+###
+PATCH http://localhost:5000/api/user/65cd8ad712b82850376a3f2c
+content-type: application/json
+
+{
+    "isAdmin":true
+}
+
+###
+POST http://localhost:5000/api/user 
+content-type: application/json
+
+{
+    "name":"some name",
+    "username": "one12",
+    "email":"test1@test.com",
+    "password": "password",
+    "resetToken": "reset token one"
+}
+
+###
+DELETE http://localhost:5000/api/user/65cd4fb1a5da4d3fa8414aaa  HTTP/1.1
+
+
+###
+
+

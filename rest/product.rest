@@ -1,0 +1,44 @@
+GET http://localhost:5000/api/product
+###
+GET http://localhost:5000/api/product/65cdad50f958b0ec36a14d93
+###
+GET http://localhost:5000/api/product/?category=smartphones
+###
+GET http://localhost:5000/api/product/?brand=Samsung
+###
+GET http://localhost:5000/api/product/?title=Samsung Galaxy Book
+###
+GET http://localhost:5000/api/product/?sort=category
+###
+GET http://localhost:5000/api/product/sortByTitle
+###
+DELETE http://localhost:5000/api/product/bulkdelete
+###
+POST http://localhost:5000/api/product/bulkadd
+###
+PATCH http://localhost:5000/api/product/65cd8ad712b82850376a3f2c
+content-type: application/json
+
+{
+    "isAdmin":true
+}
+
+###
+POST http://localhost:5000/api/product 
+content-type: application/json
+
+{
+    "name":"some name",
+    "productname": "one12",
+    "email":"test1@test.com",
+    "password": "password",
+    "resetToken": "reset token one"
+}
+
+###
+DELETE http://localhost:5000/api/product/65cdad50f958b0ec36a14d92  HTTP/1.1
+
+
+###
+
+
